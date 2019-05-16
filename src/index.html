@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Fill meta -->
-    <meta name='GethDesk is a web based application with user interface for ethereum Geth Go console client.
-    GethDesk makes easier to show you data about your Geth Go node current condition, whithout using inconvinent console commands.' content='CryptoBit: Bitcoin Wallet, send receive bitcoins with minimun fees.'>
-    <meta name='keywords' content='GethDesk, ethereum, geth go,'>
+    <meta name='PuffsDesk is a web based application with user interface for puffscoin gpuffsconsole client.
+    PuffsDesk makes easier to show you data about your gpuffs node's current condition, whithout using inconvinent console commands.' content='CryptoBit: Bitcoin Wallet, send receive bitcoins with minimun fees.'>
+    <meta name='keywords' content='PuffsDesk, puffscoin, gpuffs go,'>
     <title>GethDesk</title>
     <!--end meta -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
@@ -50,8 +50,8 @@
         </div>
         <!--Modal Window end-->
         <div class='top_panel'>
-            <div class='top_panel_appName'><img src="1200px-Ethereum_logo_2014.png" alt="Ethereum">
-                <h4>Go Ethereum Node Control Panel
+            <div class='top_panel_appName'><img src="1200px-Ethereum_logo_2014.png" alt="puffscoin">
+                <h4>Go puffscoin Node Control Panel
                 </h4>
                 <div class='cirlce_status cirlce_status_green' id='cirlce_status'></div>
                 <h4 id='Node_info'></h4><button id='tsetBTNN'>testbtn</button><button id='tsetBTNN2'>testbtn<button class='class_dics' id='Dissconnect_btn'>Dissconnect<i class="material-icons material-icons_dissconect">exit_to_app
@@ -196,7 +196,7 @@
                         <h2 class="mdl-card__title-text" id='Network_clinet_version'>--</h2>
                     </div>
                     <div class="mdl-card__supporting-text">
-                        The current ethereum protocol version.
+                        The current puffscoin protocol version.
                     </div>
                 </div>
                 <!-- Square card -->
@@ -520,7 +520,7 @@
     </div>
     <div class="div_receive_pop scale-in-center myDivToPrint" id='div_receive_pop_print'>
         <button id='close_qr_pop' class='close_qr_pop btn btn-secondary ui-widget-content'>X</button>
-        <h5>Receive Ethereum</h5>
+        <h5>Receive PUFFScoin</h5>
         <div class='overInput_qr'><span>amount USD</span><span>amount ETH</span></div>
         <div class='in_usd_or_eth'><input type="text" id='qr_code_ammount_receive_usd' class="qr_code_ammount_receive"><input
                 type="text" id='qr_code_ammount_receive_eth' class="qr_code_ammount_receive"></div><span class='eth_addr_qr_rec_found'>Ethereum
@@ -555,7 +555,7 @@
         <p id='miningPOPUPHeaderP'>Mining will start automatically after some blockchain synchronized. Note that mining for real ether only makes sense if you are in sync with the network (since you mine on top of the consensus block). Therefore the eth blockchain downloader/synchroniser will delay mining until syncing is complete, and after that mining automatically starts unless you cancel your intention with mining stop button.</p>
         <button class='miningpopBTNOK' id='miningpopBTNOK'>OK</button>
     </div>
-    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/puffscoin/web3.js/dist/web3.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
