@@ -1,12 +1,7 @@
-
-
-
 # PuffsDesk 
-![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
- [![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store%3A-1.0%20beta-brightgreen.svg)](https://chrome.google.com/webstore/detail/puffscoin-puffsdesk/) 
 
 **PuffsDesk** — is an open source application to simplify work with “PUFFScoin gpuffs Go” console client and to show you data about your node current condition without using console commands.
-#### Install this app as [chrome extension](https://chrome.google.com/webstore/detail/puffscoin-puffsdesk/) 
+#### Install this app as [chrome extension]
 
 ## Core functions
 ### Dashboard
