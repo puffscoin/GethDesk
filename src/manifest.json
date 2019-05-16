@@ -1,10 +1,10 @@
 {
     "manifest_version": 2,
-    "name": "Ethereum GethDesk",
+    "name": "PUFFScoin PuffsDesk",
     "version": "1.0.0.1",
-    "short_name":"GethDesk",
+    "short_name":"PuffsDesk",
     
-    "description": "Ethereum GethDesk - is a web based application for ethereum Geth Go console client interaction and current condition status.",
+    "description": "PUFFScoin PuffsDesk - is a web based application for PUFFScion gpuffs console client interaction and current condition status.",
     "icons": 
     { 
         "16": "/images/icon16.png",
@@ -14,7 +14,7 @@
        "128": "/images/icon128.png" 
     },
     "browser_action":{
-        "default_title":"Ethereum GethDesk"
+        "default_title":"PUFFScoin PuffsDesk"
      
         
     },
