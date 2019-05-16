@@ -198,7 +198,7 @@ function http(data) {
         getEl("miningPOPUPHeaderUnder").innerText =
           "Blockchain not fully synced!";
         getEl("miningPOPUPHeaderP").innerText =
-          "Mining will start automatically after some blockchain synchronized. Note that mining for real ether only makes sense if you are in sync with the network (since you mine on top of the consensus block). Therefore the eth blockchain downloader/synchroniser will delay mining until syncing is complete, and after that mining automatically starts unless you cancel your intention with mining stop button.";
+          "Mining will start automatically after some blockchain synchronized. Note that mining for actual PUFFScoins only makes sense if you are in sync with the network (since you mine on top of the consensus block). Therefore the eth blockchain downloader/synchroniser will delay mining until syncing is complete, and after that mining automatically starts unless you cancel your intention with mining stop button.";
         getEl("miningPOPUPID").style.display = "flex";
       } else {
       }
@@ -284,7 +284,7 @@ function listAccounts(data, url) {
       address += element.getAttribute("data-id") + ",";
     });
 
-    etherScanReq(address);
+    puffsScanReq(address);
   } else {
     let arrayAddres = [];
     let l = dataCollection;
@@ -305,12 +305,12 @@ function listAccounts(data, url) {
     }
     Object.entries(arrayOBJ).forEach(([key, value]) => {
       let s1 = value.toString();
-      etherScanReq(s1);
+      puffsScanReq(s1);
       console.log(s1);
     });
   }
 
-  function etherScanReq(address) {
+  function puffsScanReq(address) {
     console.log(address);
     let req = new XMLHttpRequest();
     let oneTimeReq = new XMLHttpRequest();
@@ -358,7 +358,7 @@ function listAccounts(data, url) {
         for (let i = 0; i < ers.result.length; i++) {
           if (temp === ers.result[i].account) {
             dataBal[y].innerHTML = deleteAfterPeriod({
-              one: web3.fromWei(ers.result[i].balance, "ether"),
+              one: web3.fromWei(ers.result[i].balance, "puffs"),
               value: 8
             });
 
@@ -689,7 +689,7 @@ function AjaxMenu(method, url, data, params) {
 
         getEl("eth_gasPrice").innerText = web3.fromWei(
           parseInt(result.result),
-          "ether"
+          "puffs"
         );
         toWeiConverter(weiGasPrice);
 
