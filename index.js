@@ -1,6 +1,6 @@
 const EthereumRpc = require("ethereum-rpc-promise");
 var request = require("request");
-let eth = new EthereumRpc("http://35.231.148.208:8545");
+let eth = new EthereumRpc("http://127.0.0.1:11363");
 
 /*
 eth.web3_clientVersion().then(x => {
@@ -81,7 +81,7 @@ const info = [];
 //Sendrequest
 function SendReq(method, params) {
   request.post(
-    "http://35.231.148.208:8545/",
+    "http://127.0.0.1:11363/",
     { json: { jsonrpc: "2.0", method: method, params: [], id: 74 } },
     function(error, response, body) {
       console.log("ERROR:", error);
