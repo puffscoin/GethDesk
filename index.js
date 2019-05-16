@@ -1,6 +1,6 @@
-const EthereumRpc = require("ethereum-rpc-promise");
+const PuffscoinRpc = require("puffscoin-rpc-promise");
 var request = require("request");
-let eth = new EthereumRpc("http://127.0.0.1:11363");
+let eth = new PuffscoinRpc("http://127.0.0.1:11363");
 
 /*
 eth.web3_clientVersion().then(x => {
