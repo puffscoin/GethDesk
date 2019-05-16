@@ -970,7 +970,7 @@ function qr_code() {
 
   img.setAttribute(
     "src",
-    "https://chart.googleapis.com/chart?cht=qr&chs=500x500&chl=ethereum:" +
+    "https://chart.googleapis.com/chart?cht=qr&chs=500x500&chl=puffscoin:" +
       qr_data_id
   );
   img.id = "linkToqrcode";
